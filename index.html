@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Bracelets</h1>
+
+  <table>
+    {% for bracelet in site.data.bracelets %}
+    <tr>
+      <td>
+        Price: {{ bracelet.price }}
+      </td>
+      <td>
+	<img src="{{ bracelet.image-url }}" style="width:400px">   
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+</div>
